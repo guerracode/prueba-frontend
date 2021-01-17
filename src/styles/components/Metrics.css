@@ -1,0 +1,90 @@
+.chartPie-container {
+  width : 100%;
+  height: 300px;
+}
+
+.charts-container {
+  position  : relative;
+  width     : 100%;
+  height    : 70%;
+  margin-top: 30px;
+}
+
+.pieChart {
+  position : absolute !important;
+  top      : calc(50% - 100px);
+  left     : calc(50% - 100px);
+  transform: rotate(-90deg);
+}
+
+.charts-texts {
+  position       : absolute;
+  top            : 45%;
+  left           : 50%;
+  margin-right   : -50%;
+  transform      : translate(-50%, -50%);
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : center;
+  width          : 150px;
+  height         : 100px;
+}
+
+.charts-texts h3 {
+  font-size  : 20px;
+  font-weight: 400;
+  color      : #AEAEAE;
+}
+
+.charts-texts p {
+  font-size  : 24px;
+  font-weight: 400;
+}
+
+.areaChart {
+  position    : absolute !important;
+  top         : 80%;
+  left        : 50%;
+  margin-right: -50%;
+  transform   : translate(-50%, -50%);
+  clip-path   : circle(60% at 50% 0%)
+}
+
+.recharts-curve.recharts-area-area {
+  opacity: 0.4;
+}
+
+.texts-container {
+  display    : flex;
+  align-items: center;
+  width      : 100%;
+  height     : 20%;
+}
+
+.texts-tablet,
+.texts-smartphone {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: center;
+  width          : 50%;
+  height         : 100%;
+}
+
+.texts-numbers {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  width          : 100%;
+  height         : auto;
+}
+
+.texts-numbers .percentage {
+  font-weight: 500;
+}
+
+.texts-numbers .number {
+  margin-left: 15px;
+  color      : #AEAEAE;
+}
