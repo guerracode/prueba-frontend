@@ -17,8 +17,8 @@ const ChartArea = ({ data }) => (
     <Area
       type="monotone"
       dataKey="percentage"
-      stroke={data.color}
-      fill={data.color}
+      stroke={data[0].color}
+      fill={data[0].color}
     />
   </AreaChart>
 );
